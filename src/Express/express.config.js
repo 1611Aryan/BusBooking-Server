@@ -15,7 +15,9 @@ const ExpressConfig = () => {
   app.use(
     cors({
       origin:
-        process.env.NODE_ENV !== "production" ? "http://localhost:3000" : "",
+        process.env.NODE_ENV !== "production"
+          ? "http://localhost:3000"
+          : "https://convrsebusbook.netlify.app",
       credentials: true,
     })
   )
