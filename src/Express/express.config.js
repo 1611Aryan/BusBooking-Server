@@ -17,7 +17,7 @@ const ExpressConfig = () => {
       origin:
         process.env.NODE_ENV !== "production"
           ? "http://localhost:3000"
-          : "https://convrsebusbook.netlify.app/",
+          : "https://convrsebusbook.netlify.app",
       credentials: true,
     })
   )
